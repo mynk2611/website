@@ -1,14 +1,15 @@
 const kalyangems = "/images/kalyangems.png"
+const remimo = "/images/remimo.png"
 
 export const products = [
   {
     href: "https://remimo.mayankmehta.tech",
     title: "Remimo",
     description:
-      "A design and development studio that focuses on building quality apps.",
-    thumbnail: kalyangems,
-    images: [kalyangems],
-    stack: ["Nextjs", "Tailwindcss"],
+      "A web based transactioin application for featured with bank transfer and phone to phone transfer.",
+    thumbnail: remimo,
+    images: [remimo],
+    stack: ["Turborepo", "Nextjs", "Nodejs", "Express.js", "Tailwindcss", "Postgres", "Prisma", "EC2"],
     slug: "remimo",
     content: (
       <div>
@@ -35,10 +36,10 @@ export const products = [
     href: "https://mayankmehta.tech",
     title: "Kalyan-Gems",
     description:
-      "Practice for technical interviews with hands on coding challenges.",
+      "Engineered a platform to handle order records and client memberships.",
     thumbnail: kalyangems,
     images: [kalyangems],
-    stack: ["Nextjs", "Tailwindcss"],
+    stack: ["Nextjs", "Tailwindcss", "Postgres", "Prisma", "EC2", "S3"],
     slug: "kalyan-gems",
     content: (
       <div>

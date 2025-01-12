@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { twMerge } from "tailwind-merge";
+import { Sidebar } from "@/components/Sidebar";
+import { Footer } from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -25,10 +23,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={twMerge(
+          inter.className,
+          "flex antialiased h-screen overflow-hidden bg-gray-100"
+        )}
       >
-        {children}
+        <Sidebar />
+        <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
+          <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
+            {children}
+            <Footer />
+          </div>
+        </div>
       </body>
-    </html>
+    </html >
   );
 }

@@ -1,5 +1,7 @@
 const kalyangems = "/images/kalyangems.png"
 const remimo = "/images/remimo.png"
+const kalyangems2 = "/images/kalyangems2.png"
+const remimo2 = "/images/remimo2.png"
 
 export const products = [
   {
@@ -8,7 +10,7 @@ export const products = [
     description:
       "A web based transactioin application for featured with bank transfer and phone to phone transfer.",
     thumbnail: remimo,
-    images: [remimo],
+    images: [remimo, remimo2],
     stack: ["Turborepo", "Nextjs", "Nodejs", "Express.js", "Tailwindcss", "Postgres", "Prisma", "EC2"],
     slug: "remimo",
     content: (
@@ -38,7 +40,7 @@ export const products = [
     description:
       "Engineered a platform to handle order records and client memberships.",
     thumbnail: kalyangems,
-    images: [kalyangems],
+    images: [kalyangems, kalyangems2],
     stack: ["Nextjs", "Tailwindcss", "Postgres", "Prisma", "EC2", "S3"],
     slug: "kalyan-gems",
     content: (

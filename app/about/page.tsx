@@ -5,9 +5,9 @@ import { Metadata } from "next";
 import About from "@/components/About";
 
 export const metadata: Metadata = {
-  title: "About | John Doe",
+  title: "About | Mayank Mehta",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Mayank Mehta is a developer. He is a digital nomad and travels around the world while working remotely.",
 };
 
 export default function AboutPage() {

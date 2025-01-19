@@ -16,20 +16,7 @@ export const products = [
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
+          The platform allows users to add funds to their digital wallet directly from their bank accounts, making it easy to manage transactions on the go. With a robust frontend built using Next.js, the application provides a smooth user experience. The backend is split into two services: one built in Next.js for core functionality and another in Node.js and Express.js to handle bank webhooks efficiently. All these services are unified under a monorepo structure using Turborepo, ensuring scalability and maintainability.
         </p>{" "}
       </div>
     ),
@@ -46,21 +33,8 @@ export const products = [
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+          The system enables users to create, track, and manage order entries seamlessly while also providing notifications to keep customers updated. Built entirely with Next.js, the platform is fully optimized for performance and SEO, ensuring a smooth and visible online presence. For secure and scalable image storage and deployment, the application leverages Amazon S3 for media handling and EC2 for hosting, offering a robust infrastructure suited for business needs.
         </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
       </div>
     ),
   },

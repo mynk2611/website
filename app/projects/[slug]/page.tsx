@@ -5,12 +5,14 @@ import { Product } from "@/types/products";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-type Props = {
-  params: { slug: string };
-};
+interface PageParams {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.slug;
+export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
+  const slug = (await params).slug;
   const product = products.find((p) => p.slug === slug) as Product | undefined;
   if (product) {
     return {
@@ -19,19 +21,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   } else {
     return {
-      title: "Projects | John Doe",
-      description:
-        "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+      title: "Projects | Mayank Mehta",
+      description: "Mayank Mehta is a developer.",
     };
   }
 }
 
-export default function SingleProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const slug = params.slug;
+export default async function SingleProjectPage({ params }: PageParams) {
+  const slug = (await params).slug;
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {
@@ -43,3 +40,4 @@ export default function SingleProjectPage({
     </Container>
   );
 }
+

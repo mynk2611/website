@@ -1,11 +1,16 @@
 "use client";
 
-import React, { useEffect, Children, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 // import "prism-theme-night-owl";
 import clsx from "clsx";
 
-export const CodeWindow = ({ title, children }: any) => {
+interface CodeWindowProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+export const CodeWindow = ({ title, children }: CodeWindowProps) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -15,12 +20,12 @@ export const CodeWindow = ({ title, children }: any) => {
     // Prism.highlightAll();
   }, []);
 
-  let child = Children.only(children);
 
   const [buttonText, setButtonText] = useState("Copy");
-  const childRef = useRef<any>(null);
+  const childRef = useRef<HTMLDivElement>(null);
 
-  const handleClick = (e: any) => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
     if (childRef.current) {
       const textToCopy = childRef.current.innerText;
 

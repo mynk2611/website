@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { formatDate } from "../lib/formatDate";
 import { Prose } from "@/components/Prose";
@@ -8,7 +7,7 @@ import { Heading } from "./Heading";
 import Link from "next/link";
 import { Paragraph } from "./Paragraph";
 
-function ArrowLeftIcon(props: any) {
+function ArrowLeftIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
@@ -21,20 +20,25 @@ function ArrowLeftIcon(props: any) {
   );
 }
 
+interface BlogLayoutProps {
+  children: React.ReactNode;
+  meta: {
+    title: string;
+    date: string;
+    image?: string; // Optional because you're providing a fallback
+  };
+}
+
 export function BlogLayout({
   children,
   meta,
-  isRssFeed = false,
-  previousPathname,
-}: any) {
+}: BlogLayoutProps) {
   if (!meta) {
     throw new Error("`meta` is required in BlogLayout.");
   }
   if (!children) {
     console.warn("No `children` found in BlogLayout.");
   }
-
-  let router = useRouter();
 
   // Fallback image in case meta.image is empty or undefined
   const imageSrc = meta.image || "https://via.placeholder.com/800x600.png?text=No+Image";

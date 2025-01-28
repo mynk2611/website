@@ -35,6 +35,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo docker pull mame2611/portfolio:latest 
-            sudo docker stop portfolio:latest || true
-            sudo docker rm -f portfolio:latest || true
-            sudo docker run -d --restart unless-stopped -p 3005:3000 --name portfolio -e DATABASE_URL=${{ secrets.DATABASE_URL }} mame2611/portfolio:latest
+            sudo docker stop portfolio || true
+            sudo docker rm -f portfolio || true
+            sudo docker run -d --restart unless-stopped -p 3004:3000 --name portfolio -e DATABASE_URL=${{ secrets.DATABASE_URL }} mame2611/portfolio:latest

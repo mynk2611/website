@@ -1,4 +1,4 @@
-const kalyangems = "/images/kalyangems.png"
+const kalyangems = "/images/kalyangems1.png"
 const remimo = "/images/remimo.png"
 const kalyangems2 = "/images/kalyangems2.png"
 const remimo2 = "/images/remimo2.png"

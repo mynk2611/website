@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blogs | Mayank Mehta",
   description:
-    "Mayank Mehta is a developer",
+    "Explore my thoughts and insights on software development, technology trends, and personal experiences through my blog posts",
 };
 
 export default async function Blog() {

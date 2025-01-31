@@ -6,8 +6,7 @@ import About from "@/components/About";
 
 export const metadata: Metadata = {
   title: "About | Mayank Mehta",
-  description:
-    "Mayank Mehta is a developer. He is a digital nomad and travels around the world while working remotely.",
+  description: "Learn more about Mayank Mehta - Software engineer and world explorer",
 };
 
 export default function AboutPage() {

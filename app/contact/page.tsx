@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Mayank Mehta",
   description:
-    "Mayank Mehta is a developer. He is a digital nomad and travels around the world while working remotely.",
+    "Get in touch with Mayank Mehta - Let's connect and discuss opportunities, collaborations, or just have a friendly chat about technology",
 };
 
 export default function Projects() {

@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects | Mayank Mehta",
   description:
-    "Mayank Mehta is a developer.",
+    "A look at some of the projects I’ve built — from full-stack web apps to creative frontend experiments. Each one’s a piece of my journey as a developer.",
 }
 
 export default function Projects() {

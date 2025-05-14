@@ -11,8 +11,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mayank Mehta",
-  description: "Mayank Mehta - Portfolio & Blog",
+  title: {
+    default: "Mayank Mehta",
+    template: "%s - Mayank Mehta"
+  },
+  description: "I'm Mayank Mehta, a full-stack developer who loves building scalable and visually polished web apps. Explore my projects, tech stack, and connect with me.",
 };
 
 

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '',
     },
-    sitemap: 'https://portfolio.mayankmehta/sitemap.xml',
+    sitemap: 'https://portfolio.mayankmehta.dev/sitemap.xml',
   }
 }

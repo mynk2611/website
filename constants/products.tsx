@@ -5,7 +5,7 @@ const remimo2 = "/images/remimo2.png"
 
 export const products = [
   {
-    href: "https://remimo.mayankmehta.tech",
+    href: "https://remimo.mayankmehta.dev",
     title: "Remimo",
     description:
       "A web based transactioin application for featured with bank transfer and phone to phone transfer.",
@@ -22,7 +22,7 @@ export const products = [
     ),
   },
   {
-    href: "https://mayankmehta.tech",
+    href: "https://mayankmehta.dev",
     title: "Kalyan-Gems",
     description:
       "Engineered a platform to handle order records and client memberships.",
